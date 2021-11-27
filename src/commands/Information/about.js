@@ -20,7 +20,7 @@ module.exports = {
 			new MessageButton()
     .setLabel("i suck")
     .setStyle("LINK")
-    .setURL("https://discord.gg/trades),
+    .setURL("https://discord.gg/trades"),
     new MessageButton()
     .setLabel("Support")
     .setStyle("LINK")
