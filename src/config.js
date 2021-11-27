@@ -1,7 +1,7 @@
 module.exports = {
     token: process.env.TOKEN || "",  // your bot token
-    prefix: process.env.PREFIX || "!", // bot prefix
-    ownerID: process.env.OWNERID || "491577179495333903", //your discord id
+    prefix: process.env.PREFIX || ",", // bot prefix
+    ownerID: process.env.OWNERID || "477140449811890188", //your discord id
     SpotifyID: process.env.SPOTIFYID || "", // spotify client id
     SpotifySecret: process.env.SPOTIFYSECRET || "", // spotify client secret
     mongourl: process.env.MONGO_URI || "", // MongoDb URL
