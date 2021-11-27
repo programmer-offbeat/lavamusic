@@ -19,8 +19,8 @@ module.exports = {
     .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=36768832&scope=applications.commands%20bot`),
 			new MessageButton()
     .setLabel("i suck")
-    //.setStyle("LINK")
-    //.setURL("https://github.com/brblacky/lavamusic"),
+    .setStyle("LINK")
+    .setURL("https://discord.gg/trades),
     new MessageButton()
     .setLabel("Support")
     .setStyle("LINK")
