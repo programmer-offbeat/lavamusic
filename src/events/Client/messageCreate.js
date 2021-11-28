@@ -13,8 +13,9 @@ module.exports = async (client, message) => {
     const mention = new RegExp(`^<@!?${client.user.id}>( |)$`);
     if (message.content.match(mention)) {
       const embed = new MessageEmbed()
-        .setColor(client.embedColor)
-        .setDescription(`**› My prefix in this server is \`${prefix}\`**\n**› You can see my all commands type \`${prefix}\`help**`);
+        .setColor('#7ba3cf')
+        .setDescription(`<:GH_aPinkArrow:914394929449545759> My prefix in this server is \`${prefix}\`\n <:GH_aPinkArrow:914394929449545759> To see all my commands,use \`${prefix}\`help`);
+        .setFooter(`SyncO Tunes`)
       message.channel.send({embeds: [embed]})
     };
    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
