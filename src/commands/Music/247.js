@@ -3,7 +3,7 @@ module.exports = {
   name: "247",
   aliases: ["24h", "24/7", "24*7"],
   category: "Music",
-  description: "24/7 in voice channel",
+  description: "Toggle 24/7 in voice channel",
   args: false,
   usage: "",
   permission: [],
@@ -18,15 +18,18 @@ module.exports = {
     if (player.twentyFourSeven) {
       player.twentyFourSeven = false;
       const embed = new MessageEmbed()
-       .setColor(client.embedColor)
-       .setDescription(`24/7 mode is now off.`)
+       .setColor('#FF0000')
+       .setTitle(`<:dt_arrowpink:914341737877631007> 24x7 mode`)
+       .setDescription(`24/7 mode is now turned off.`)
       return message.reply({embeds: [embed]});
     }
     else {
       player.twentyFourSeven = true;
       const embed = new MessageEmbed()
-       .setColor(client.embedColor)
-       .setDescription(`24/7 mode is now on.`)
+       .setTitle(`<:dt_arrowpink:914341737877631007> 24x7 mode`)
+       //.setColor(client.embedColor)
+       .setColor('#8acc98')
+       .setDescription(`24/7 mode is now on.\nThe bot will not leave the VC now!`)
       
       return message.reply({embeds: [embed]});
     }
