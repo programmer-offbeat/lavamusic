@@ -59,7 +59,7 @@ module.exports = {
              .setDescription(`${emojiplaylist} **Added to queue** - [${Searched.tracks[0].info.title}](${Searched.tracks[0].info.uri})`)
          return message.channel.send({embeds: [thing]});
            } else {
-         return message.channel.send({ embeds: [new MessageEmbed().setColor('#FF0000').setTimestamp().setTitle(`<a:DF_Cross:914347264527433758> Nope :(`).setDescription('> Couldn't find that query.\nBe more specific, or include a link')]});
+         return message.channel.send({ embeds: [new MessageEmbed().setColor('#FF0000').setTimestamp().setTitle(`<a:DF_Cross:914347264527433758> Nope :(`).setDescription(`> Couldn't find that query.\nBe more specific, or include a link`)]});
         }
       } else {
         let Searched = await player.search(SearchString, message.author);
