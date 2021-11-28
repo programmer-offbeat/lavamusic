@@ -25,7 +25,8 @@ client.guilds.cache.forEach((guild) => {
 
 })
         const embed = new MessageEmbed()
-            .setColor(message.client.embedColor)
+            //.setColor(message.client.embedColor)
+	      .setColor('#7ba3cf')
             .setThumbnail(message.client.user.displayAvatarURL())
 	    .setTitle(`<a:HD_arrow:914341825639251968> Bot status ;;`)
             .setDescription(`
