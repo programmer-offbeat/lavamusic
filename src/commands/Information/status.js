@@ -30,23 +30,23 @@ client.guilds.cache.forEach((guild) => {
 	    .setTitle(`<a:HD_arrow:914341825639251968> Bot status ;;`)
             .setDescription(`
 **⇢ __Statistics__ :-**
-> ${emojidash} Servers : \`${scount}\`
-> ${emojidash} Channels : \`${ccount}\`
-> ${emojidash} Users : \`${mcount}\`
-> ${emojidash}• Uptime : \`${duration1}\`
+> <:Blue_Dash:914341403193118750> Servers : \`${scount}\`
+> <:Blue_Dash:914341403193118750> Channels : \`${ccount}\`
+> <:Blue_Dash:914341403193118750> Users : \`${mcount}\`
+> <:Blue_Dash:914341403193118750>• Uptime : \`${duration1}\`
 **⇢ __System__ :-**
-> ${emojidash} Platfrom : \`${os.type}\`
-> ${emojidash} Discord.js : \`v${version}\`
-> ${emojidash} Node : \`${process.version}\`
+> <:Blue_Dash:914341403193118750> Platfrom : \`${os.type}\`
+> <:Blue_Dash:914341403193118750> Discord.js : \`v${version}\`
+> <:Blue_Dash:914341403193118750> Node : \`${process.version}\`
 **⇢ __CPU__ :-**
-> ${emojidash} Cores : \`${cpu.cores}\`
-> ${emojidash} Model : \`${os.cpus()[0].model}\` 
-> ${emojidash} Speed : \`${os.cpus()[0].speed} MHz\`
+> <:Blue_Dash:914341403193118750> Cores : \`${cpu.cores}\`
+> <:Blue_Dash:914341403193118750> Model : \`${os.cpus()[0].model}\` 
+> <:Blue_Dash:914341403193118750> Speed : \`${os.cpus()[0].speed} MHz\`
 **⇢ __Memory__ :-**
-> ${emojidash} Total Memory : \`${(os.totalmem() / 1024 / 1024).toFixed(2)} Mbps\`
-> ${emojidash} Free Memory : \`${(os.freemem() / 1024 / 1024).toFixed(2)} Mbps\`
-> ${emojidash} Heap Total : \`${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} Mbps\`
-> ${emojidash} Heap Usage : \`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} Mbps\`
+> <:Blue_Dash:914341403193118750> Total Memory : \`${(os.totalmem() / 1024 / 1024).toFixed(2)} Mbps\`
+> <:Blue_Dash:914341403193118750> Free Memory : \`${(os.freemem() / 1024 / 1024).toFixed(2)} Mbps\`
+> <:Blue_Dash:914341403193118750> Heap Total : \`${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} Mbps\`
+> <:Blue_Dash:914341403193118750> Heap Usage : \`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} Mbps\`
 `);
          message.reply({embeds: [embed]});
     }
