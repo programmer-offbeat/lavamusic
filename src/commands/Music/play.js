@@ -46,8 +46,9 @@ module.exports = {
             player.play();
          const thing = new MessageEmbed()
              .setColor(client.embedColor)
+	     .setTitle(`<:playlist:914342507360423936> Playlist added!`)
              .setTimestamp()
-             .setDescription(`${emojiplaylist} **Added Playlist to queue** [${Searched.playlistInfo.name}](${SearchString}) - [\`${Searched.tracks.length}\`]`)
+             .setDescription(`${emojiplaylist} **Added Playlist to queue**: [${Searched.playlistInfo.name}](${SearchString}) - [\`${Searched.tracks.length}\`]`)
           return message.channel.send({embeds: [thing]});
      } else if (Searched.loadType.startsWith("TRACK")) {
           player.queue.add(TrackUtils.build(Searched.tracks[0], message.author));
