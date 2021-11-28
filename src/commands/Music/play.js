@@ -6,9 +6,9 @@ module.exports = {
     name: "play",
     category: "Music",
     aliases: ["p"],
-    description: "Plays audio from YouTube or Soundcloud",
+    description: "Plays a moosic",
     args: true,
-    usage: "<YouTube URL | Video Name | Spotify URL>",
+    usage: "<YouTube URL | Music Name | Spotify URL>",
     permission: [],
     owner: false,
     player: false,
@@ -84,6 +84,7 @@ module.exports = {
             player.play();
         const thing = new MessageEmbed()
              .setColor(client.embedColor)
+	     .setFooter(`Action by ${message.author.id}`)
              .setTimestamp()
              //.setDescription(`${emojiaddsong} **Added Song to queue**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
 	     .setDescription(`<a:loading:914345073708265493> **Song was added!**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
