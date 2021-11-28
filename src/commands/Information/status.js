@@ -30,23 +30,23 @@ client.guilds.cache.forEach((guild) => {
 	    .setTitle(`<a:HD_arrow:914341825639251968> Bot status ;;`)
             .setDescription(`
 **⇢ __Statistics__ :-**
-> ${dash} Servers : \`${scount}\`
-> ${dash} Channels : \`${ccount}\`
-> ${dash} Users : \`${mcount}\`
-> ${dash}• Uptime : \`${duration1}\`
+> ${emojidash} Servers : \`${scount}\`
+> ${emojidash} Channels : \`${ccount}\`
+> ${emojidash} Users : \`${mcount}\`
+> ${emojidash}• Uptime : \`${duration1}\`
 **⇢ __System__ :-**
-> ${dash} Platfrom : \`${os.type}\`
-> ${dash} Discord.js : \`v${version}\`
-> ${dash} Node : \`${process.version}\`
+> ${emojidash} Platfrom : \`${os.type}\`
+> ${emojidash} Discord.js : \`v${version}\`
+> ${emojidash} Node : \`${process.version}\`
 **⇢ __CPU__ :-**
-> ${dash} Cores : \`${cpu.cores}\`
-> ${dash} Model : \`${os.cpus()[0].model}\` 
-> ${dash} Speed : \`${os.cpus()[0].speed} MHz\`
+> ${emojidash} Cores : \`${cpu.cores}\`
+> ${emojidash} Model : \`${os.cpus()[0].model}\` 
+> ${emojidash} Speed : \`${os.cpus()[0].speed} MHz\`
 **⇢ __Memory__ :-**
-> ${dash} Total Memory : \`${(os.totalmem() / 1024 / 1024).toFixed(2)} Mbps\`
-> ${dash} Free Memory : \`${(os.freemem() / 1024 / 1024).toFixed(2)} Mbps\`
-> ${dash} Heap Total : \`${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} Mbps\`
-> ${dash} Heap Usage : \`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} Mbps\`
+> ${emojidash} Total Memory : \`${(os.totalmem() / 1024 / 1024).toFixed(2)} Mbps\`
+> ${emojidash} Free Memory : \`${(os.freemem() / 1024 / 1024).toFixed(2)} Mbps\`
+> ${emojidash} Heap Total : \`${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} Mbps\`
+> ${emojidash} Heap Usage : \`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} Mbps\`
 `);
          message.reply({embeds: [embed]});
     }
