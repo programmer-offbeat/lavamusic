@@ -14,8 +14,8 @@ module.exports = async (client, message) => {
     if (message.content.match(mention)) {
       const embed = new MessageEmbed()
         .setColor('#7ba3cf')
-        .setDescription(`<:GH_aPinkArrow:914394929449545759> My prefix in this server is \`${prefix}\`\n <:GH_aPinkArrow:914394929449545759> To see all my commands,use \`${prefix}\`help`);
-        .setFooter(`SyncO Tunes`)
+        .setDescription(`<:GH_aPinkArrow:914394929449545759> My prefix in this server is \`${prefix}\`\n <:GH_aPinkArrow:914394929449545759> To see all my commands,use \`${prefix}\`help`)
+        .setFooter(`SyncO Tunes`);
       message.channel.send({embeds: [embed]})
     };
    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
