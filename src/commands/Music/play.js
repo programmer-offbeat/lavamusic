@@ -74,7 +74,7 @@ module.exports = {
             player.queue.totalSize === Searched.tracks.length)
             player.play();
          const thing = new MessageEmbed()
-             .setColor(client.embedColor)
+             //.setColor(client.embedColor)
              .setTimestamp()
              .setDescription(`${emojiplaylist} Playlist added to queue - [${Searched.playlist.name}](${SearchString}) - \`${Searched.tracks.length}\` songs - \`[${convertTime(Searched.playlist.duration)}]\``)
            return message.channel.send({embeds: [thing]});
@@ -84,7 +84,7 @@ module.exports = {
             player.play();
         const thing = new MessageEmbed()
              .setColor(client.embedColor)
-	     .setFooter(`Action by ${message.author.id}`)
+	     .setFooter(`Action by ${message.author.tag}`)
              .setTimestamp()
              //.setDescription(`${emojiaddsong} **Added Song to queue**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
 	     .setDescription(`<a:loading:914345073708265493> **Song was added!**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
