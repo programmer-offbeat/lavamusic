@@ -59,7 +59,7 @@ module.exports = {
              .setDescription(`${emojiplaylist} **Added to queue** - [${Searched.tracks[0].info.title}](${Searched.tracks[0].info.uri})`)
          return message.channel.send({embeds: [thing]});
            } else {
-         return message.channel.send({ embeds: [new MessageEmbed().setColor(client.embedColor).setTimestamp().setDescription('there were no results found.')]});
+         return message.channel.send({ embeds: [new MessageEmbed().setColor('#FF0000').setTimestamp().setTitle(`<a:DF_Cross:914347264527433758> Nope :(`).setDescription('> Couldn't find that query.\nBe more specific, or include a link')]});
         }
       } else {
         let Searched = await player.search(SearchString, message.author);
@@ -85,7 +85,8 @@ module.exports = {
         const thing = new MessageEmbed()
              .setColor(client.embedColor)
              .setTimestamp()
-             .setDescription(`${emojiaddsong} **Added Song to queue**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
+             //.setDescription(`${emojiaddsong} **Added Song to queue**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
+	     .setDescription(`<a:loading:914345073708265493> **Song was added!**\n[${Searched.tracks[0].title}](${Searched.tracks[0].uri}) - \`[${convertTime(Searched.tracks[0].duration)}]\``);
            return message.channel.send({embeds: [thing]});
         }
       }
