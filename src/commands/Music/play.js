@@ -67,7 +67,7 @@ module.exports = {
            return message.channel.send({ embeds: [new MessageEmbed().setColor(client.embedColor).setTimestamp().setDescription("Nothing is playing right now...")]});
 
          if (Searched.loadType === "NO_MATCHES")
-           return message.channel.send({ embeds: [new MessageEmbed()].setColor(client.embedColor).setTimestamp().setDescription(`No matches found for - [this]${SearchString}`)});
+           return message.channel.send({ embeds: [new MessageEmbed().setColor('#FF0000').setTimestamp().setTitle(`<a:DF_Cross:914347264527433758> Nope!`).setDescription(`No matches found for - [this]${SearchString}\n Try to make more sense ig, or include a link`)]});
         else if (Searched.loadType == "PLAYLIST_LOADED") {
           player.queue.add(Searched.tracks);
           if (!player.playing && !player.paused &&
