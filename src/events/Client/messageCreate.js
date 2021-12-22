@@ -14,7 +14,7 @@ module.exports = async (client, message) => {
     if (message.content.match(mention)) {
       const embed = new MessageEmbed()
         .setColor('#7ba3cf')
-        .setDescription(`<a:dp_arroq:923139463226490910> My prefix in this guild is \`${prefix}\`\n <a:dp_arroq:923139463226490910> Use \`${prefix}\`help` to get all commands !`)
+        .setDescription(`<a:dp_arroq:923139463226490910> My prefix in this guild is \`${prefix}\`\n <a:dp_arroq:923139463226490910> Use \`${prefix}help\` to get all commands !`)
         .setFooter(`SyncO Tunes`);
       message.channel.send({embeds: [embed]})
     };
