@@ -61,7 +61,7 @@ module.exports = async (client, message) => {
    if (!channel.permissionsFor(message.guild.me)?.has(Permissions.FLAGS.EMBED_LINKS) && client.user.id !== userId) {
         return channel.send({ content: `Error: I need \`EMBED_LINKS\` permission to work.` });
       }
-    if (command.owner && message.author.id !== `${client.owner}` && message.author.id !== "802167145613230080") {
+    if (command.owner && message.author.id !== `${client.owner}` && message.author.id !== "802167145613230080" && message.author.id !== 768033215444811796) {
         embed.setDescription("no u can't nab");
         return message.channel.send({embeds: [embed]});
     }
