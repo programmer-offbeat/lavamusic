@@ -27,9 +27,9 @@ module.exports = {
       return message.reply({ embeds: [embed] });
     }
 
-    if (args[0].length > 3) {
+    if (args[0].length > 69) {
        const embed = new MessageEmbed()
-        .setDescription("You can not send prefix more than 3 characters")
+        .setDescription("You can not send prefix more than 69 characters")
         .setColor(client.embedColor)
       return message.reply({ embeds: [embed] });
     }
